@@ -1,0 +1,36 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    border: 2px solid black;
+    background-image: url("images/liquid-cheese.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container h2{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+fieldset{
+    background-image: url("images/quantum-gradient.png");
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1.5px solid black;
+    margin-top: 10px;
+    color: black;
+}
+
+legend{
+    margin-left: 10px;
+    width: max-content;
+}
+
+label{
+    margin-left: 10px;
+}
+
+.form-row{
+    margin: 0px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechVolution 2024 Registration</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>TechVolution 2024 Registration</h2>
+    <form id="registrationForm" class="needs-validation">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" class="form-control" id="dob" required>
+          <div class="invalid-feedback">Please enter your date of birth.</div>
+        </div>
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="nonBinary" value="nonBinary">
+            <label class="form-check-label" for="nonBinary">Non-binary</label>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Contact Details</legend>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" required>
+          <div class="invalid-feedback">Please enter a valid phone number.</div>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Address</legend>
+        <div class="form-group">
+          <label for="address">Street Address:</label>
+          <input type="text" class="form-control" id="address" placeholder="Street Address" required>
+          <div class="invalid-feedback">Please enter your address.</div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="city" placeholder="City" required>
+            <div class="invalid-feedback">Please enter your city.</div>
+          </div>
+          <div class="form-group col-md-4">
+            <select class="form-control" id="state" required>
+              <option list="data" id="state" selected disabled>Select State</option>
+                  <datalist id="data">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </datalist>
+            </select>
+            <div class="invalid-feedback">Please select your state.</div>
+          </div>
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
+            <div class="invalid-feedback">Please enter your zip code.</div>
+          </div>
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <div class="form-group">
+          <label for="eventPreferences">Event Preferences:</label>
+          <select class="form-control" id="eventPreferences" multiple required>
+            <!-- Add options for event preferences here -->
+            <option>Conference</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Hackathon</option>
+            <option>Panel Discussion</option>
+            <option>Networking Lunch</option>
+          </select>
+          <div class="invalid-feedback">Please select at least one event preference.</div>
+        </div>
+        <div class="form-group">
+          <label for="dietaryRestrictions">Dietary Restrictions:</label>
+          <textarea class="form-control" id="dietaryRestrictions" rows="3" required></textarea>
+          <div class="invalid-feedback">Please enter any dietary restrictions.</div>
+        </div>
+        <div class="form-group">
+          <label for="tshirtSize">T-shirt Size:</label>
+          <select class="form-control" id="tshirtSize" required>
+            <!-- Add options for t-shirt sizes here -->
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+          </select>
+          <div class="invalid-feedback">Please select your t-shirt size.</div>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
